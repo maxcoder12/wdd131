@@ -1,0 +1,65 @@
+:root{
+    --darkest-color: #000;
+    --dark-color: #3b3838;
+    --bright-color: #979494;
+    --brightest-color: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+header{
+    grid-column: 1/4;
+    background-color: var(--dark-color);
+    color: var(--brightest-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+h1{ 
+    padding-bottom: 3em;
+    margin: 1rem;
+}
+
+header > nav{
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+}
+
+nav > a{
+    flex-grow: 1;
+    color: var(--brightest-color);
+    background-color: var(--darkest-color);
+    padding: 2rem 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+}
+
+main{
+    grid-column: 1/3;
+    background-color: var(--bright-color);
+    padding: 1rem;
+    
+}
+
+aside{
+    grid-column: 3/4;
+    padding: 1rem;
+}
+
+footer{
+    grid-column: 1/4;
+    padding: 1rem;
+    background-color: var(--dark-color);
+    color: var(--brightest-color);
+    text-align: center;
+}
