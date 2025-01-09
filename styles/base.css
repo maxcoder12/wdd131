@@ -1,0 +1,167 @@
+:root{
+    --darkest-color: #000;
+    --dark-color: #3b3838;
+    --bright-color: #979494;
+    --brightest-color: #fff;
+}
+
+body{
+    margin: auto  0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bright-color);
+    color: var(--brightest-color);
+    grid-column: 1/4;
+}   
+
+h1{
+    font-weight: 400;
+    padding: 1em;
+    text-align: center;
+}
+
+p{line-height: 2em; padding: 2em;}
+
+h1 > span{
+    color: var(--darkest-color);
+}
+
+nav{
+    height: auto;
+    display: flex;
+    justify-self: center;
+}
+
+nav > a{
+    background-color: var(--darkest-color);
+    color: var(--brightest-color);
+    text-decoration: none;
+    border-bottom: 5px solid var(--darkest-color);
+    padding: 2em;
+}
+
+nav> a:hover{
+    background-color: var(--brightest-color);
+    color: var(--darkest-color);
+    border-bottom: 5px solid var(--bright-color);
+}
+
+main{
+    grid-column: 1/4;
+    display: grid;
+    padding: 2em;
+    justify-content: space-around;
+    grid-template-columns: 70% 30%;
+    gap: 1em;
+}
+
+.card{
+    position: relative;
+    margin: 0 1em;
+    border: 3px solid var(--darkest-color);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > h2{
+    margin: 0;
+    background-color: var(--dark-color);
+    color: var(--brightest-color);
+    text-align: center;
+    padding: 1em;
+}
+
+.card > article{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.card > article > div{
+    display: flex;
+}
+
+.card > article > div > figure{
+    display: flex;
+    width: 100%;
+}
+
+.card > article > div > figure{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card > article > div > figure > img{
+    max-width: 100%;
+}
+
+.card > article > div > figure > figcaption{
+    margin: 1em 0;
+    text-align: center;
+}
+
+.card > article > div > p{
+    max-width: 60%;
+}
+
+
+.card > article > h3{
+    text-align: center;
+    border-bottom: 2px solid var(--bright-color);
+    padding: 1em;
+    margin: 0 3em;
+}
+
+.card > img{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    padding: 2em;
+    max-width: 20%;
+}
+
+.card > ul{
+    margin: auto 0;
+}
+
+.card > ul > li{
+    margin: 1em 1.5em;
+    font-size: 1.2em;
+}
+
+footer{
+    grid-column: 1/4;
+    background-color: var(--dark-color);
+    text-align: center;
+    padding: .5em 0;
+}
+
+footer > p{
+    color: var(--brightest-color);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+#lastModified{
+    padding: 0;
+    margin: 0;
+    color: var(--brightest-color);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
