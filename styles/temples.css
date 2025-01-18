@@ -43,10 +43,7 @@
         margin: 0 1.5em;
     }
 
-    #displayMenu::before{
-        
-        content: "≡";
-    }
+    
 
     
     ul{
@@ -75,6 +72,8 @@
     .show li{
         display: block;
     }
+
+    
 
     ul > li > a{
         display: block;

@@ -13,6 +13,11 @@ const menu = document.querySelector("#menu");
 
 displayMenu.addEventListener("click", function () {
     menu.classList.toggle("show");
+    if (displayMenu.textContent == "≡"){
+        displayMenu.textContent = "x";
+    } else if (displayMenu.textContent == "x") {
+        displayMenu.textContent = "≡";
+    };
 });
 
 homeLink.addEventListener("click", function () {
