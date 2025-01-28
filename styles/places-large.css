@@ -65,7 +65,7 @@
         width: 100%;
     }
 
-    section > img::after{
+    section > img{
         background-color: var(--soft-beige);
         width: 8em;
         height: auto;
@@ -107,7 +107,14 @@
         color: var(--soft-beige);
         font-weight: 700;
         font-size: 1.4em;
-    }    
+    }   
+    
+    footer::after{
+        content: "Thank you!";
+        color: var(--soft-beige);
+        font-weight: 700;
+        font-size: 1.4em;
+    }
 }
 
 
