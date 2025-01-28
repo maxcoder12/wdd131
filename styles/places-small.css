@@ -64,7 +64,7 @@
         width: 100%;
     }
     
-    section > img{
+    section > img::after{
         background-color: var(--soft-beige);
         width: 8em;
         height: auto;
