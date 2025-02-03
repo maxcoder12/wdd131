@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+    table, caption{
+        background-color: #000;
+        font-weight: 700;
+        width: 25em;
+        color: white;
+    }
+    th{
+        font-weight: 700;
+    }
+
+    tr, th, td{
+        border: none;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    tbody > tr:nth-child(odd){
+        background-color: white;
+        text-align: center;
+        color: #000;
+    }
+    tbody > tr:nth-child(even){
+        background-color: rgba(252, 252, 255, 0.5);
+        color: #000;
+        text-align: center;
+    }
+
+    thead > tr:nth-child(2){
+        background-color: #554d4d;
+    }
+
+    thead > tr:nth-child(2) > th:nth-child(1){
+        background-color: #000;
+    }
+
+
+    td{
+        color: none;
+    }
+        
+    </style>
+
+    <table>
+        <caption>
+            ACME Wildwest Services
+        </caption>
+
+
+        <thead>
+            <tr>
+                <th  colspan="4" scope="colgroup">Packages</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th id="basic" scope="col">Basic</th>
+                <th id="premium" scope="col">Premium</th>
+                <th id="deluxe" scope="col">Deluxe</th>
+            </tr>            
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Feature 1</th>
+                <td headers="basic">✔</td>
+                <td headers="premium">✔</td>
+                <td headers="deluxe">✔</td>
+            </tr>
+            <tr>
+                <th scope="row">Feature 2</th>
+                <td headers="basic">❌</td>
+                <td headers="premium">✔</td>
+                <td headers="deluxe">✔</td>
+            </tr>
+            <tr>
+                <th scope="row">Feature 3</th>
+                <td headers="basic">❌</td>
+                <td headers="premium">❌</td>
+                <td headers="deluxe">✔</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

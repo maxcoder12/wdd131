@@ -27,7 +27,7 @@
         color: var(--brightest-color);
     }
 
-    header > ul{
+    header > nav > ul{
         list-style: none;
         display: flex;
         justify-content: space-between;
@@ -48,7 +48,7 @@
     }
 
     main{
-        max-width: 900px;
+        max-width: 1500px;
         margin: 2em auto;
 
         padding: 1em;
@@ -62,28 +62,56 @@
 
     .photos-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
+        justify-content: center;
     }
 
     figure{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: .3s;   
+        padding: 0;
         background-color: var(--brightest-color);
-        padding: 1em;
+        border: 1px solid var(--darkest-color);
+    }
+    
+    figure:hover{
+        border: 1px solid var(--darkest-color);
+        box-shadow: 0 0 30px var(--darkest-color);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    figure > figcaption{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    figure > figcaption > ul{
+        padding: 0;
+        margin: 0 auto;
         text-align: center;
     }
 
-    img{
-        transition: .3s;
-        border: 1px solid transparent;
+    figure > figcaption > ul > li{
+        list-style: none;
+        margin: 1em 0;
     }
 
-    img:hover{
-        box-shadow: 0 0 30px var(--darkest-color);
-        border-radius: 5px;
-        border: 1px solid var(--darkest-color);
-        cursor: pointer;
+    img{
+        border: 1px solid transparent;
+        max-width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        display: block;
     }
+
+    
 
     #displayMenu{
         display: none;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazyLoad</title>
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Lazy load Page</h1>
+    </header>
+
+    <main>
+        <picture><img src="images/gramado-large.png" loading="lazy" alt=""></picture>
+        <picture><img src="images/my-picture.jpg" loading="lazy" alt=""></picture>
+        <picture><img src="images/cloudy.svg" loading="lazy" alt=""></picture>
+        <picture><img src="images/porto-alegre-temple.jpg" loading="lazy" alt=""></picture>
+        <picture><img src="images/rs-flag.jpg" loading="lazy" alt=""></picture>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 😀 Maximo Gomez 😀 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    
+</body>
+</html>

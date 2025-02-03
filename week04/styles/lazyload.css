@@ -1,0 +1,19 @@
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+    
+}
+
+img{
+    width: 400px;
+    height: 600px;
+    display: block;
+    animation: fade 5s;
+}
+
