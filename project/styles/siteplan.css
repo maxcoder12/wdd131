@@ -1,0 +1,43 @@
+:root{
+    --primary-color: #2E2E2E;
+    --accent-color: #D72638;
+    --secondary-color: #141414;
+    --secondary-background:#ffffff;
+    --soft-gray: #B0B0B0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+code, pre {
+    font-family: "Fira Code", monospace;
+}
+
+.color-schema > li:first-child > b{
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+.color-schema > li:nth-child(2) > b{
+    background-color: var(--accent-color);
+    color: #FFF;
+}
+.color-schema > li:nth-child(3) > b{
+    background-color: var(--secondary-color);
+    color: #FFF;
+}
+.color-schema > li:nth-child(4) > b{
+    background-color: var(--secondary-background);
+    color: #000;
+    border: 1px solid black;
+}
+.color-schema > li:last-child > b{
+    background-color: var(--soft-gray);
+    color: #FFF;
+}
