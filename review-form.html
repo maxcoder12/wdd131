@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Maximo A. Gomez || WDD 131">
+    <meta name="description" content="A review form to send your feedback to us!">
+    <link rel="stylesheet" href="styles/review-form.css">
+    <script src="scripts/review-form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get" class="wf1">
+            
+            <fieldset>
+                <legend>Product name:</legend>
+                <label for="products-list">Product List:</label>
+                <select id="products-list" name="product" required>
+                    <option value="" disabled selected>Select a Product &#9662;</option>
+                </select>
+            </fieldset>
+            
+            <fieldset class="overall-rating">
+                <legend>Overall Rating:</legend>
+                <label><input id="rating-one" type="radio" name="rating" value="rating-one" required>☆</label>
+                <label><input id="rating-two" type="radio" name="rating" value="rating-two">☆☆</label>
+                <label><input id="rating-three" type="radio" name="rating" value="rating-three">☆☆☆</label>
+                <label><input id="rating-four" type="radio" name="rating" value="rating-four">☆☆☆☆</label>
+                <label><input id="rating-five" type="radio" name="rating" value="rating-five">☆☆☆☆☆</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Details:</legend>
+                <label for="installDate">Installation Date:</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?<br><span>(Check all that apply)</span></legend>
+                <label><input id="durability" type="checkbox" name="features" value="durability">Durability</label>
+                <label><input id="performance" type="checkbox" name="features" value="performance">Performance</label>
+                <label><input id="design" type="checkbox" name="features" value="design">Design</label>
+                <label><input id="affordability" type="checkbox" name="features" value="affordability">Affordability</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Review details:</legend>
+                <label for="review">Written Review <span class="optional-text">(optional)</span>:</label>
+                <textarea placeholder="Type your review..." id="review" name="review" rows="4"></textarea>
+
+                <label for="userName">Your Name <span class="optional-text">(optional)</span>:</label>
+                <input placeholder="Luke Gavin..." type="text" id="userName" name="userName">
+                
+            </fieldset>
+            <input type="submit" value="Send a Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 😀 Maximo Gomez 😀 Brazil</p>
+        <p id="lastModified"></p>
+    </footer>   
+</body>
+</html>
