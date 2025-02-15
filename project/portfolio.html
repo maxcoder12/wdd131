@@ -11,43 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium-devices.css">
+    <link rel="stylesheet" href="styles/small-devices.css">
     <script src="scripts/projects.js" defer></script>
+    <script src="scripts/portfolio.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Maximo A. Gomez Blog</h1>
         <nav>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="about-me.html">About me</a>
-            <a target="_blank" href="portfolio.html">Portfolio</a>
+            <a href="#">Portfolio</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <section class="portfolio">
-        <h2>My Projects</h2>
-    
-        <div class="project">
-            <img src="images/project-one-screenshot.jpg" alt="Project One Screenshot">
-            <div class="project-info">
-                <h3>Project Title</h3>
-                <p><strong>About:</strong> A brief description of the project, what it does, and its purpose.</p>
-                <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, React, Node.js</p>
-                <a class="button" href="https://github.com/your-project-link" target="_blank" class="button">View on GitHub</a>
-            </div>
-        </div>
-    
-        <!-- Repeat for more projects -->
-        <div class="project">
-            <img src="images/project-two-screenshot.jpg" alt="Project Two Screenshot">
-            <div class="project-info">
-                <h3>Another Project</h3>
-                <p><strong>About:</strong> Explanation of the second project and its features.</p>
-                <p><strong>Technologies used:</strong> Python, Flask, PostgreSQL</p>
-                <a class="button" href="https://github.com/another-project-link" target="_blank" class="button">View on GitHub</a>
-            </div>
-        </div>
-    
+    <section id="projectsContainer" class="portfolio">
+        <h2>My Projects</h2>    
     </section>
 
     <footer>
