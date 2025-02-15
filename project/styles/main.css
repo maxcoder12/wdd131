@@ -35,6 +35,15 @@ header{
     padding: 1em 2em;
 }
 
+.hamburger-icon{
+    width: 3em;
+    display: none;
+}
+
+.quit{
+    display: none;
+}
+
 h1{
     font-size: 2em;
 }
