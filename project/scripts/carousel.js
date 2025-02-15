@@ -12,6 +12,7 @@ function displayProject(container){
         a.setAttribute("href", project.url);
         a.setAttribute("target", "_blank");
         img.setAttribute("src", project.image);
+        img.setAttribute("laoding", "lazy")
 
         a.appendChild(img);
 

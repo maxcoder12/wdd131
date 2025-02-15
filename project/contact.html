@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me || Maximo A. Gomez Blog</title>
     <meta name="author" content="Maximo A. Gomez || WDD131">
-    <meta name="description" content="This page is about Maximo Gomez, and all of his history. Here you also can find information about his city.">
+    <meta name="description" content="A contact form to send a message to Maximo Gomez.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="styles/small-devices.css">
     <script src="scripts/projects.js" defer></script>
     <script src="scripts/hamburguerMenu.js" defer></script>
+    <script src="scripts/formSubmit.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Maximo A. Gomez Blog</h1>
-        <img id="hamburguerIcon" class="hamburger-icon" src="images/hamburger-icon.png" alt="">
+        <img  loading="lazy" id="hamburguerIcon" class="hamburger-icon" src="images/hamburger-icon.png" alt="">
         <span class="quit" id="quitMenu">X</span>
         <nav id="menu">
             <a href="index.html">Home</a>
@@ -29,7 +30,7 @@
     </header>
 
     <main>
-        <form action="sent.html" method="get" class="wf1">
+        <form id="contactForm" action="sent.html" method="get" class="wf1">
             <h2>Send me a Message!</h2>
                         
             <fieldset>
@@ -53,7 +54,7 @@
                 <textarea placeholder="Hello! how are yo..." id="message" name="message" rows="4" required></textarea>
 
                 <label><input type="checkbox" name="contactMethod" value="email" required> Contact me via email</label>
-<label><input type="checkbox" name="contactMethod" value="phone"> Contact me via phone <span> (optional)</span></label>
+                <label><input type="checkbox" name="contactMethod" value="phone"> Contact me via phone <span> (optional)</span></label>
 
             </fieldset>
             <input type="submit" value="Send a message">
@@ -66,16 +67,16 @@
             <h3>Follow my social media!</h3>
             <nav class="social-nav">
                 <a target="_blank" href="https://www.facebook.com">
-                    <img src="images/facebook-logo.svg" alt="Facebook">
+                    <img loading="lazy" src="images/facebook-logo.svg" alt="Facebook">
                 </a>
                 <a target="_blank" href="https://www.instagram.com">
-                    <img src="images/instagram-logo.png" alt="Instagram">
+                    <img loading="lazy" src="images/instagram-logo.png" alt="Instagram">
                 </a>
                 <a target="_blank" href="https://www.linkedin.com">
-                    <img src="images/linkedin-logo.png" alt="LinkedIn">
+                    <img loading="lazy" src="images/linkedin-logo.png" alt="LinkedIn">
                 </a>
                 <a target="_blank" href="https://x.com">
-                    <img src="images/x-logo.avif" alt="X">
+                    <img loading="lazy" src="images/x-logo.avif" alt="X">
                 </a>
             </nav>
         </div>

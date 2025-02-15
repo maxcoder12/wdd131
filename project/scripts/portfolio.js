@@ -21,6 +21,7 @@ function displayProject(container){
         a.textContent = "View on GitHub";
 
         img.setAttribute("src", project.image);
+        img.setAttribute("laoding", "lazy")
 
         about.innerHTML = `<strong>About:</strong> ${aboutText}`;
         technologies.innerHTML = `<strong>Technologies:</strong> ${technologiesText}`;
